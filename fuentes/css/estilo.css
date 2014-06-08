@@ -1,0 +1,16 @@
+/*
+ * La cabecera de la pagina inicio.php
+ */
+.cabecera h1{
+    color: black;
+    text-align: center;
+    font-size: 20pt;
+}
+
+/*
+ * El mapa de la pagina inicio.php
+ */
+#mapa {
+    height: 70%;
+    width: 100%;
+}

@@ -5,10 +5,14 @@
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
     <link rel="stylesheet" href="<?php echo base_url(); ?>css/estilo.css" />
     <link rel="stylesheet" href="<?php echo base_url(); ?>js/libs/JQuery/datetimepicker-master/jquery.datetimepicker.css" />
+    <link rel="stylesheet" href="<?php echo base_url(); ?>js/libs/leaflet/Plugins/MarkerCluster.css" />
+    <link rel="stylesheet" href="<?php echo base_url(); ?>js/libs/leaflet/Plugins/MarkerCluster.Default.css" />
     
     <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+    <script src="<?php echo base_url(); ?>js/libs/leaflet/Plugins/leaflet.markercluster.js" type="text/javascript" charset="utf-8"></script>
     <script src="<?php echo base_url(); ?>js/libs/JQuery/datetimepicker-master/jquery.js" type="text/javascript" charset="utf-8"></script>
-    <script src="<?php echo base_url(); ?>js/libs/JQuery/datetimepicker-master/jquery.datetimepicker.js" type="text/javascript" charset="utf-8"></script>
+    <script src="<?php echo base_url(); ?>js/libs/JQuery/datetimepicker-master/jquery.datetimepicker.js" type="text/javascript" charset="utf-8"></script> 
+    <script src="<?php echo base_url(); ?>js/Constantes.js" type="text/javascript" charset="utf-8"></script>
     <script src="<?php echo base_url(); ?>js/Utilitarios.js" type="text/javascript" charset="utf-8"></script>
     <script src="<?php echo base_url(); ?>js/Mapa.js" type="text/javascript" charset="utf-8"></script>
     <!--  

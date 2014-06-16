@@ -38,13 +38,19 @@ Mapa.prototype.obtener_eventos = function() {
 	
 	// Link de donde se sacan los puntos.
 	// Devuelve una estructura json.
-	var v_geo_json_url = "http://eventos/eventos/listarEventos_jsonp?fecha_actual=" + v_fecha_actual_string;
+	var v_geo_json_url = HOSTNAME + "eventos/listarEventos_jsonp?fecha_actual=" + v_fecha_actual_string;
+	
+	this.cluster_marcadores = L.markerClusterGroup();
+	v_cluster_marcadores = this.cluster_marcadores;
 	
     function getJson(p_data) {
-    	v_geojsonLayer = L.geoJson((p_data), {
-            onEachFeature: onEachFeature
-        }).addTo(v_mapa);
+    	v_geojsonLayer = L.geoJson(p_data, {
+    		onEachFeature: onEachFeature
+    	});
+    	v_cluster_marcadores.addLayer(v_geojsonLayer); 			// Agrega al Cluster group.
     }
+
+	v_mapa.addLayer(v_cluster_marcadores);						// Agrega al mapa.
 
     $.ajax({
         url: v_geo_json_url,
@@ -59,17 +65,24 @@ Mapa.prototype.filtrar_eventos = function(){
 	var v_mapa = this.mapa;
 	//v_geojsonLayer = this.geojsonLayer;
 	
+	// Obtiene la referencia del cluster marcadores.
+	var v_cluster_marcadores = this.cluster_marcadores;
+	
     var v_date_timepicker_desde = document.getElementById("date_timepicker_desde");
     var v_date_timepicker_hasta = document.getElementById("date_timepicker_hasta");
 
+
     // Elminar los valores antiguos.
-	v_mapa.removeLayer(v_geojsonLayer);
+    v_cluster_marcadores.clearLayers();
     
-    $.getJSON('http://eventos/eventos/filtrarEventos?date_timepicker_desde=' + v_date_timepicker_desde.value
+    $.getJSON(HOSTNAME + 'eventos/filtrarEventos?date_timepicker_desde=' + v_date_timepicker_desde.value
     		+ '&date_timepicker_hasta=' + v_date_timepicker_hasta.value, function(p_data) {
-    	v_geojsonLayer = L.geoJson((p_data), {
-            onEachFeature: onEachFeature
-        }).addTo(v_mapa);
+    	v_geojsonLayer = L.geoJson(p_data, {
+    		onEachFeature: onEachFeature
+    	});
+    	
+    	v_cluster_marcadores.addLayer(v_geojsonLayer); 				// Agrega al Cluster group.
+    	v_mapa.addLayer(v_cluster_marcadores);						// Agrega al mapa.
     });
 }
 

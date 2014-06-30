@@ -49,8 +49,8 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
-$db['default']['password'] = '123456';
+$db['default']['username'] = 'eventos';
+$db['default']['password'] = 'eventospasswd';
 $db['default']['database'] = 'eventos';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';

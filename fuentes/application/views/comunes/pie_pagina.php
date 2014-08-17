@@ -9,5 +9,7 @@
   ga('send', 'pageview');
 
 </script>
-Para agregar eventos, enviar un mail a <b>prensa[a]proyectosbeta.net</b>
+<div class="container cabecera">
+    Para agregar eventos, enviar un mail a <b>prensa[a]proyectosbeta.net</b>
+ </div>
 <!-- Fin de Pie de pagina -->

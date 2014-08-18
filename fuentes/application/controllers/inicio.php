@@ -16,7 +16,13 @@ class Inicio extends CI_Controller{
 	 * 
 	 */
 	function index(){
-		$this->load->view("inicio");
-		//$this->load->view("marcar_evento");
+	    $this->load->view("inicio");
+	}
+        
+        /**
+	 * 
+	 */
+        function marcar_evento(){
+	    $this->load->view("marcar_evento");
 	}
 }

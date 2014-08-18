@@ -5,11 +5,11 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-50658219-1', 'proyectosbeta.net');
+  ga('create', <?php echo GOOGLE_ANALYTICS_US; ?>, <?php echo NOMBRE_DOMINIO; ?>);
   ga('send', 'pageview');
 
 </script>
 <div class="container">
-    Para agregar eventos, enviar un mail a <b>prensa[a]proyectosbeta.net</b>
+    Para agregar eventos, enviar un mail a <b><?php echo MAIL_ENVIO; ?></b>
  </div>
 <!-- Fin de Pie de pagina -->

@@ -12,9 +12,18 @@
     <div class="container">
         <!-- Menu -->
         <?php $this->load->view('comunes/menu')?>
-        <br>
     </div>
-    
+    <div class="container">
+        <!-- Mensaje descatacado -->
+        <div class="jumbotron">
+            <div class="container">
+                <p>
+                    Encuentra los diferentes eventos en tu ciudad.
+                </p>
+            </div>
+        </div>
+    </div>
+
     <script type="text/javascript">
         // Obtener fecha actual.
  	    var v_fecha_actual_string = obtenerFechaActual("d-m-Y");

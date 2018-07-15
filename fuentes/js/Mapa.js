@@ -139,7 +139,7 @@ function onEachFeature(p_feature, p_layer) {
             
             if(v_etiqueta == 'Link'){
             	if(v == ""){
-            	    v_popupString += '<b>' + "Sin Informaci&oacute;n" + '</b><br />';
+            	    v_popupString += '<b>' + "Sin informaci&oacute;n" + '</b><br />';
             	}else{
             	     v_popupString += '<b>' + "Informaci&oacute;n" + '</b>: <a href="' + v + '" target="_blank">' + "sitio" + '</a><br />';
             	}

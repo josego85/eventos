@@ -3,19 +3,19 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+<link rel="stylesheet" href="<?php echo base_url(); ?>js/Libs/Leaflet/leaflet.css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>css/estilo.css" />
-<link rel="stylesheet" href="<?php echo base_url(); ?>js/libs/JQuery/datetimepicker-master/jquery.datetimepicker.css" />
-<link rel="stylesheet" href="<?php echo base_url(); ?>js/libs/leaflet/Plugins/MarkerCluster.css" />
-<link rel="stylesheet" href="<?php echo base_url(); ?>js/libs/leaflet/Plugins/MarkerCluster.Default.css" />
+<link rel="stylesheet" href="<?php echo base_url(); ?>js/Libs/JQuery/Plugins/datetimepicker/jquery.datetimepicker.css" />
+<link rel="stylesheet" href="<?php echo base_url(); ?>js/Libs/Leaflet/Plugins/Leaflet.markercluster/MarkerCluster.css" />
+<link rel="stylesheet" href="<?php echo base_url(); ?>js/Libs/Leaflet/Plugins/Leaflet.markercluster/MarkerCluster.Default.css" />
 
 <!-- Versión compilada y comprimida del CSS de Bootstrap -->
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" media="screen">
+<link rel="stylesheet" href="<?php echo base_url(); ?>/css/Libs/Bootstrap/css/bootstrap.min.css" media="screen">
 
-<script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
-<script src="<?php echo base_url(); ?>js/libs/leaflet/Plugins/leaflet.markercluster.js" type="text/javascript" charset="utf-8"></script>
-<script src="<?php echo base_url(); ?>js/libs/JQuery/datetimepicker-master/jquery.js" type="text/javascript" charset="utf-8"></script>
-<script src="<?php echo base_url(); ?>js/libs/JQuery/datetimepicker-master/jquery.datetimepicker.js" type="text/javascript" charset="utf-8"></script> 
+<script src="<?php echo base_url(); ?>js/Libs/Leaflet/leaflet.js" type="text/javascript" charset="utf-8"></script>
+<script src="<?php echo base_url(); ?>js/Libs/Leaflet/Plugins/Leaflet.markercluster/leaflet.markercluster.js" type="text/javascript" charset="utf-8"></script>
+<script src="<?php echo base_url(); ?>js/Libs/JQuery/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="<?php echo base_url(); ?>js/Libs/JQuery/Plugins/datetimepicker/jquery.datetimepicker.full.min.js" type="text/javascript" charset="utf-8"></script> 
 <script src="<?php echo base_url(); ?>js/Constantes.js" type="text/javascript" charset="utf-8"></script>
 <script src="<?php echo base_url(); ?>js/Utilitarios.js" type="text/javascript" charset="utf-8"></script>
 <script src="<?php echo base_url(); ?>js/Mapa.js" type="text/javascript" charset="utf-8"></script>
@@ -29,7 +29,7 @@
 <![endif]-->
 
 <!-- Versión compilada y comprimida del JavaScript de Bootstrap -->
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="<?php echo base_url(); ?>/css/Libs/Bootstrap/js/bootstrap.min.js"></script>
 
 <script type="text/javascript" charset="utf-8">
     // Iniciar.
